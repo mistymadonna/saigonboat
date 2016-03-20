@@ -1,5 +1,7 @@
 $max-width: 960px;
 $primary: #303030;
+$header: #FFF;
+
 $secondary: #1A1A1A;
 $font-std: 'BT Futura W01', Arial, sans-serif;
 
@@ -7,8 +9,12 @@ body {
   font-family: $font-std;
 }
 
+a {
+  color: #000;
+}
+
 header {
-  background: $primary;
+  background: $header;
   height: 75px;
 
   .inner {
@@ -18,25 +24,105 @@ header {
     // outline: dotted 1px orange;
 
     .logo {
+      display: block;
       float: left;
-      margin-top: 5px;
-      margin-right: 5%;
+      font-size: 2em;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    .menu-btn {
+      display: none;
+
+      &:hover {
+        background-color: #f4f4f4;
+      }
+    }
+
+    .menu-btn:checked ~ .menu {
+      max-height: 240px;
+    }
+
+    .menu-btn:checked ~ .menu-icon {
+      .navicon {
+        background: transparent;
+
+        &:before {
+          transform: rotate(-45deg);
+        }
+
+        &:after {
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    .menu-btn:checked ~ .menu-icon:not(.steps) {
+      .navicon {
+        &:before, &:after {
+          top: 0;
+        }
+      }
     }
 
     .menu-icon {
+      cursor: pointer;
       display: none;
-      width: 40px;
-      position: absolute;
-      right: 5%;
-      top: 28px;
+      float: right;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none;
+
+      .navicon {
+        background: #333;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+
+        &:before, &:after {
+          background: #333;
+          content: '';
+          display: block;
+          height: 100%;
+          position: absolute;
+          transition: all .2s ease-out;
+          width: 100%;
+        }
+
+        &:before {
+            top: 5px;
+        }
+
+        &:after {
+          top: -5px;
+        }
+      }
     }
 
-    ul {
+    .menu {
+      clear: none;
+      max-height: none;
+      float: left; // should we do this?
+      transition: max-height .2s ease-out;
+      // outline: dotted 1px orange;
 
       li {
         display: inline-block;
-        margin-right: 5%;
-        margin-top: 40px;
+        // margin-right: 5%;
+        // margin-top: 40px;
+        color: #FFFFFF;
+
+        a {
+          display: block;
+          padding: 20px 30px;
+          text-decoration: none;
+
+          &:hover {
+            background-color: #f4f4f4;
+          }
+        }
       }
     }
   }
@@ -77,14 +163,24 @@ footer {
 
 @media (max-width: 768px) {
   .inner {
-    ul {
-      display: none;
-    }
-    img.menu-icon {
+    label.menu-icon {
       display: block;
+    }
 
-      &:hover + ul {
+    ul.menu {
+      clear: both;
+      max-height: 0;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      background-color: #fff;
+      width: 100%;
+      li {
         display: block;
+        a {
+          padding: 20px 20px;
+        }
       }
     }
   }
