@@ -1,7 +1,7 @@
 $max-width: 960px;
-$primary: #444;
-$secondary: #888;
-$font-std: helvetica;
+$primary: #303030;
+$secondary: #1A1A1A;
+$font-std: 'BT Futura W01', Arial, sans-serif;
 
 body {
   font-family: $font-std;
@@ -9,7 +9,7 @@ body {
 
 header {
   background: $primary;
-  height: 100px;
+  height: 75px;
 
   .inner {
     max-width: $max-width;
@@ -19,11 +19,11 @@ header {
 
     .logo {
       float: left;
-      margin-top: 15px;
+      margin-top: 5px;
       margin-right: 5%;
     }
 
-    .hamburger {
+    .menu-icon {
       display: none;
       width: 40px;
       position: absolute;
@@ -53,9 +53,9 @@ main {
   .sub-banners {
 
     li {
-      float: left;
+      display: inline-block;
       width: 30%;
-      margin-right: 5%;
+      margin-right: 2.5%;
       margin-top: 2.5%;
       margin-bottom: 2.5%;
 
@@ -71,8 +71,7 @@ main {
 }
 
 footer {
-  clear: both;
-  height: 150px;
+  height: 40px;
   background: $secondary;
 }
 
@@ -81,7 +80,7 @@ footer {
     ul {
       display: none;
     }
-    img.hamburger {
+    img.menu-icon {
       display: block;
 
       &:hover + ul {
