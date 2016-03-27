@@ -139,10 +139,10 @@ main {
 
   .sub-banners {
 
-    li {
-      display: inline-block;
+    div {
+      float: left;
       width: 30%;
-      margin-right: 2.5%;
+      margin-right: 5%;
       margin-top: 2.5%;
       margin-bottom: 2.5%;
 
@@ -190,8 +190,8 @@ footer {
     margin-left: 2.5%;
     margin-right: 2.5%;
 
-    ul.sub-banners {
-      li {
+    div.sub-banners {
+      div {
         width: 100%;
         img {
           width: 100%;
