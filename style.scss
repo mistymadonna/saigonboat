@@ -32,6 +32,7 @@ header {
     }
 
     .menu-btn {
+      // Don't change this!!!
       display: none;
 
       &:hover {
@@ -75,7 +76,7 @@ header {
 
       .navicon {
         background: #333;
-        display: block;
+        display: flex;
         height: 2px;
         position: relative;
         transition: background .2s ease-out;
@@ -115,7 +116,7 @@ header {
         color: #FFFFFF;
 
         a {
-          display: block;
+          display: flex;
           padding: 20px 30px;
           text-decoration: none;
 
