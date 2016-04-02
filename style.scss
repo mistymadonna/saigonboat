@@ -18,7 +18,7 @@ a {
 
 header {
   background: $header;
-  height: 75px;
+  height: 50px;
 
   .inner {
     max-width: $max-width;
@@ -29,10 +29,10 @@ header {
     .logo {
       display: block;
       float: left;
-      font-size: 2em;
-      padding: 10px 20px;
+      font-size: 25px;
+      padding: 28px 20px;
       text-decoration: none;
-    }
+      }
 
     .menu-btn {
       // Don't change this!!!
@@ -117,6 +117,8 @@ header {
         // margin-right: 5%;
         // margin-top: 40px;
         color: #FFFFFF;
+        font-size: 15px;
+
 
         a {
           display: flex;
