@@ -2,7 +2,7 @@ $max-width: 960px;
 $primary: #303030;
 $header: #FFF;
 
-$secondary: #1A1A1A;
+$secondary: #f4f4f4;
 $font-std: 'BT Futura W01', Arial, sans-serif;
 
 body {
@@ -167,6 +167,11 @@ main {
 footer {
   height: 40px;
   background: $secondary;
+  text-align: center;
+  .address {
+    font-size: 12px;
+  }
+
 }
 
 @media (max-width: 768px) {
