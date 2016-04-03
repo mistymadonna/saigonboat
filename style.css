@@ -1,0 +1,136 @@
+body {
+  font-family: "BT Futura W01", Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+a {
+  color: #000; }
+
+header {
+  background: #FFF;
+  height: 50px; }
+  header .inner {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative; }
+    header .inner .logo {
+      display: block;
+      float: left;
+      font-size: 25px;
+      padding: 18px 20px;
+      text-decoration: none; }
+    header .inner .menu-btn {
+      display: none; }
+      header .inner .menu-btn:hover {
+        background-color: #f4f4f4; }
+    header .inner .menu-btn:checked ~ .menu {
+      max-height: 240px; }
+    header .inner .menu-btn:checked ~ .menu-icon .navicon {
+      background: transparent; }
+      header .inner .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg); }
+      header .inner .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg); }
+    header .inner .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, header .inner .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+      top: 0; }
+    header .inner .menu-icon {
+      cursor: pointer;
+      display: none;
+      float: right;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none; }
+      header .inner .menu-icon .navicon {
+        background: #333;
+        display: flex;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px; }
+        header .inner .menu-icon .navicon:before, header .inner .menu-icon .navicon:after {
+          background: #333;
+          content: '';
+          display: block;
+          height: 100%;
+          position: absolute;
+          transition: all .2s ease-out;
+          width: 100%; }
+        header .inner .menu-icon .navicon:before {
+          top: 5px; }
+        header .inner .menu-icon .navicon:after {
+          top: -5px; }
+    header .inner .menu {
+      clear: none;
+      max-height: none;
+      float: right;
+      transition: max-height .2s ease-out;
+      margin-top: 7px; }
+      header .inner .menu li {
+        display: inline-block;
+        color: #FFFFFF;
+        font-size: 15px; }
+        header .inner .menu li a {
+          display: flex;
+          padding: 20px 15px;
+          text-decoration: none; }
+          header .inner .menu li a:hover {
+            background-color: #f4f4f4; }
+
+main {
+  max-width: 960px;
+  margin: 2.5% auto;
+  flex: 1; }
+  main .banner {
+    max-width: 100%; }
+  main .sub-banners div {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%; }
+    main .sub-banners div img {
+      max-width: 100%; }
+    main .sub-banners div:last-child {
+      margin-right: 0px; }
+
+.gallery-banners div {
+  float: left;
+  width: 30%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%; }
+
+footer {
+  height: 40px;
+  background: #f4f4f4;
+  text-align: center; }
+  footer .address {
+    font-size: 12px; }
+
+@media (max-width: 768px) {
+  .inner label.menu-icon {
+    display: block; }
+  .inner ul.menu {
+    clear: both;
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+    width: 100%; }
+    .inner ul.menu li {
+      display: block; }
+      .inner ul.menu li a {
+        padding: 20px 20px; }
+
+  main {
+    margin-left: 2.5%;
+    margin-right: 2.5%; }
+    main div.sub-banners div {
+      width: 100%; }
+      main div.sub-banners div img {
+        width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
