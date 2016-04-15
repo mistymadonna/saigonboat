@@ -104,7 +104,9 @@ main {
 footer {
   height: 40px;
   background: #f4f4f4;
-  text-align: center; }
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 50px; }
   footer .address {
     font-size: 12px; }
 
