@@ -2,8 +2,4 @@
   a. To compile, run 'scss style.scss style.css'
   b. You can watch it by 'scss --watch style.scss:style.css'. It will
      detect .scss changes and compile to .css on the fly
-2. get pages to link thru nav.
-3. create links thru the 3 images as another way to link pages together.
-4. create a form for contacting?
-5. instead of logo have text at top of page aka saigon boat cafe.
-
+2. create a form for contacting?
