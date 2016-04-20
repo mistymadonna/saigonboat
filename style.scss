@@ -14,18 +14,43 @@ a {
 }
 header {
   background: $header;
-  height: 50px;
+  height: 70px;
   .inner {
+    background-color: #f4f4f4;
+    .info {
+      // background-color: #f4f4f4;
+      // position: relative;
+      // top: 26px;
+      // padding-left: 5px;
+
+      // float: left;
+
+
+      // position: relative;
+      // right: 270px;
+      // outline: dotted 1px orange;
+      .phone {
+        padding-left: 30px;
+      }
+    }
+    .facebook {
+        // text-align: right;
+      //   padding-top: 5px;
+      //   padding-right: 10px;
+      // position: relative;
+      // left: 260px;
+      padding-left: 550px;
+    }
     max-width: $max-width;
     margin: 0 auto;
     position: relative;
-    // outline: dotted 1px orange;
     .logo {
       display: block;
       float: left;
       font-size: 25px;
       padding: 18px 20px;
       text-decoration: none;
+      padding-top: 35px;
     }
     .menu-btn {
       // Don't change this!!!
@@ -157,6 +182,9 @@ footer {
 }
 @media (max-width: 768px) {
   .inner {
+    div.topbar {
+      display: none;
+    }
     label.menu-icon {
       display: block;
     }
