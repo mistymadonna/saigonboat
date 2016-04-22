@@ -97,6 +97,8 @@ main {
 .modal-content h4 {
   padding-bottom: 10px; }
 .modal-content .social-media {
+  position: relative;
+  right: 5px;
   padding-bottom: 10px; }
 
 footer {
