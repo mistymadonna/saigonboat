@@ -79,7 +79,7 @@ header {
 
 main {
   max-width: 960px;
-  margin: 2.5% auto;
+  margin: auto auto;
   flex: 1; }
   main .banner {
     max-width: 100%; }
